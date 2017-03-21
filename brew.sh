@@ -136,15 +136,15 @@ brew link libxml2 --force
 brew link libxslt --force
 
 # Install Heroku
-brew install heroku-toolbelt
-heroku update
+#brew install heroku-toolbelt
+#heroku update
 
 # Install Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+# brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" xquartz
@@ -154,12 +154,12 @@ brew cask install --appdir="/Applications" sublime-text
 brew cask install --appdir="/Applications" atom
 brew cask install --appdir="/Applications" virtualbox
 brew cask install --appdir="/Applications" vagrant
-brew cask install --appdir="/Applications" heroku-toolbelt
+#brew cask install --appdir="/Applications" heroku-toolbelt
 brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
-brew cask install --appdir="/Applications" firefox
+#brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
@@ -173,6 +173,10 @@ brew cask install --appdir="/Applications" cyberduck
 brew cask install --appdir="/Applications" vlc
 brew cask install --appdir="/Applications" kodi
 brew cask install --appdir="/Applications" unrarx
+brew cask install --appdir="/Applications" scroll-reverser
+brew cask install --appdir="/Applications" logitech-unifying
+brew cask install --appdir="/Applications" postman
+
 
 #Remove comment to install LaTeX distribution MacTeX
 brew cask install --appdir="/Applications" mactex
@@ -180,6 +184,9 @@ brew cask install --appdir="/Applications" mactex
 # Install Docker, which requires virtualbox
 #brew install docker
 #brew install boot2docker
+
+# Install Docker for Mac (beta), which does not require virtualbox
+brew cask install --appdir="/Applications" docker-beta
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
