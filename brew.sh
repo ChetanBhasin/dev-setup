@@ -124,6 +124,9 @@ brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
+brew install ffmpeg
+
+brew install kubectl
 
 # Lxml and Libxslt
 brew install libxml2
@@ -136,7 +139,10 @@ brew install heroku-toolbelt
 heroku update
 
 # Install Cask
-brew install caskroom/cask/brew-cask
+brew tap phinze/cask
+brew install brew-cask
+brew tap caskroom/versions
+#brew install caskroom/cask/brew-cask
 
 # Core casks
 brew cask install --appdir="/Applications" alfred
@@ -161,16 +167,23 @@ brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" evernote
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
+brew cask install --appdir="/Applications" google-drive
+brew cask install --appdir="/Applications" chromecast
+brew cask install --appdir="/Applications" spotify
+brew cask install --appdir="/Applications" cyberduck
+brew cask install --appdir="/Applications" vlc
+brew cask install --appdir="/Applications" kodi
+brew cask install --appdir="/Applications" unrarx
 
 #Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
+brew cask install --appdir="/Applications" mactex
 
 # Link cask apps to Alfred
 brew cask alfred link
 
 # Install Docker, which requires virtualbox
-brew install docker
-brew install boot2docker
+#brew install docker
+#brew install boot2docker
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
