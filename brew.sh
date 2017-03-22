@@ -176,6 +176,7 @@ brew cask install --appdir="/Applications" unrarx
 brew cask install --appdir="/Applications" scroll-reverser
 brew cask install --appdir="/Applications" logitech-unifying
 brew cask install --appdir="/Applications" postman
+brew cask install --appdir="/Applications" lastpass
 
 
 #Remove comment to install LaTeX distribution MacTeX
