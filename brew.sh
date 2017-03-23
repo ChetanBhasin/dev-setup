@@ -159,15 +159,14 @@ brew cask install --appdir="/Applications" macdown
 
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
-#brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" firefox
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
+#fbrew cask install --appdir="/Applications" evernote
 #brew cask install --appdir="/Applications" gimp
 #brew cask install --appdir="/Applications" inkscape
 brew cask install --appdir="/Applications" google-drive
-brew cask install --appdir="/Applications" chromecast
 brew cask install --appdir="/Applications" spotify
 brew cask install --appdir="/Applications" cyberduck
 brew cask install --appdir="/Applications" vlc
@@ -175,8 +174,6 @@ brew cask install --appdir="/Applications" kodi
 brew cask install --appdir="/Applications" unrarx
 brew cask install --appdir="/Applications" scroll-reverser
 brew cask install --appdir="/Applications" logitech-unifying
-brew cask install --appdir="/Applications" postman
-brew cask install --appdir="/Applications" lastpass
 
 
 #Remove comment to install LaTeX distribution MacTeX
