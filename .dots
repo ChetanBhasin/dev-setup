@@ -95,6 +95,14 @@ function runDots() {
             echo ""
             ./android.sh
         fi
+        if [ $ARG == "develop" ] || [ $ARG == "all" ]; then
+            # Run the android.sh Script
+            echo "------------------------------"
+            echo "Setting up development environment."
+            echo "------------------------------"
+            echo ""
+            ./develop.sh
+        fi
     done
 
     echo "------------------------------"
