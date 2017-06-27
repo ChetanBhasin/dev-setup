@@ -15,6 +15,10 @@ echo "------------------------------"
 echo "Source virtualenvwrapper from ~/.extra"
 source ~/.extra
 
+# In order to use GPG
+brew update
+brew install gpg
+
 ###############################################################################
 # Python 2 Virtual Enviroment                                                 #
 ###############################################################################
@@ -100,7 +104,7 @@ echo "" >> $BASH_PROFILE_PATH
 echo "" >> $BASH_PROFILE_PATH
 echo "# IPython Notebook Spark integration, added by aws.sh" >> $BASH_PROFILE_PATH
 # Run $ brew info apache-spark to determine the Spark install location
-echo "export SPARK_HOME='/usr/local/Cellar/apache-spark/1.4.1'" >> $BASH_PROFILE_PATH
+echo "export SPARK_HOME='/usr/local/Cellar/apache-spark/2.1.0'" >> $BASH_PROFILE_PATH
 echo "# Appending pyspark-shell is needed for Spark 1.4+" >> $BASH_PROFILE_PATH
 echo "export PYSPARK_SUBMIT_ARGS='--master local[2] pyspark-shell'" >> $BASH_PROFILE_PATH
 echo "" >> $BASH_PROFILE_PATH
