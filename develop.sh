@@ -26,5 +26,12 @@ brew cask install --appdir="~/Applications" java
 brew cask install --appdir="~/Applications" Caskroom/cask/intellij-idea-ce
 brew cask install --appdir="~/Applications" Caskroom/cask/pycharm-ce
 
+# Install other development package
+brew install sbt
+brew install scala
+
 # Remove outdated versions from the cellar.
 brew cleanup
+
+# Install Ammonite REPL
+sudo curl -L -o /usr/local/bin/amm https://git.io/vQEhd && sudo chmod +x /usr/local/bin/amm && amm
